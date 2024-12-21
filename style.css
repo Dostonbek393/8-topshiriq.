@@ -1,0 +1,43 @@
+#grid {
+  display: grid;
+  gap: 10px;
+  height: 100px;
+  grid-template-columns: repeat(7, 50px);
+  grid-template-rows: repeat(3, 100px);
+  grid-template-areas:
+    " header header header header main main main"
+    "header header header header footer footer footer  "
+    "section section section section3 section3 section3 section3";
+}
+
+.box {
+  border-radius: 7px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#item1 {
+  background-color: #999999;
+  grid-area: header;
+}
+
+#item2 {
+  background-color: #999999;
+  grid-area: main;
+}
+
+#item3 {
+  background-color: #999999;
+  grid-area: footer;
+}
+
+#item4 {
+  background-color: #999999;
+  grid-area: section;
+}
+
+#item5 {
+  background-color: #999999;
+  grid-area: section3;
+}
